@@ -11,6 +11,35 @@
     --bs-whiteh: #e0dddd;
     --bs-gray10: #4b5e65;
     --bs-pourpr: #201b22;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --grayb: #6c757dbe;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; 
 }
 
 body {
@@ -21,7 +50,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
+    position: ;
     background-color: #2f435eec;
     backdrop-filter: blur(2px);
     padding: 3rem;
@@ -60,7 +89,7 @@ nav {
 header {
     display: flex;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 0px;
     padding: 100px;
 }
 
@@ -87,12 +116,106 @@ header {
     transition: 0.6s ease all;
 }
 
-.header_circle:hover {
+.header_img:hover .header_circle {
     transform:
         perspective(800px) rotateY(-15deg) translateY(-50px) rotateX(10deg) scale(1);
     filter: blur(0);
+    top: 310px;
     opacity: 1;
 }
+
+/* contact form /////////////// */
+/* .form::before{
+  display: block;
+  left: auto;
+  right: auto;
+} */
+.form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+  
+  
+}
+form{
+  padding: 30px;
+  width: 40%;
+  padding-bottom: 90px;
+  background-color: var(--light);
+}
+
+.form_content{
+  display: flex;
+  flex-direction: column;
+  box-shadow: -4px 0px 9px 0px var(--grayb);
+}
+.form_info{
+  
+}
+.form_area{
+  margin: 10px;
+}
+input{
+  padding: 20px;
+  height: 3rem;
+  outline: 0;
+}
+#name{
+  width: 13rem;
+}
+#email{
+  width: 13rem;
+}
+#form_submit{
+  width: 8rem;
+  text-align: center;
+}
+
+form>button{
+  margin-left: 10px;
+  padding: 10px;
+  width: 8rem;
+  color: var(--bs-white3);
+  background-color: var(--bs-grayb);
+  border-radius: 3px;
+  border: none;
+}
+.form_links{
+  padding: 120px 30px  120px 30px !important;
+  width: 9.5cm;
+  border-radius: 5px;
+  padding-bottom: 90px;
+  background-color: var(--bs-gray10);
+}
+.form_links-icons li{
+  list-style: none;
+}
+.form_links-icons a>i{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear;
+}
+.form_links-icons li{
+  margin: 20px;
+}
+.form_links-icons a,h1{
+  text-decoration: none;
+  color: #f8f9fa;
+}
+
+
+
 
 
 
@@ -236,7 +359,7 @@ header {
   width:34px;
   font-size:14px
 }
-.social-icons a.facebook:hover
+.social-icons  a.facebook:hover
 {
   background-color:#3b5998
 }
