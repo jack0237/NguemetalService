@@ -280,14 +280,26 @@ header {
   position: relative;
   margin: 0;
 }
-
 .section-title h1 {
   color: #495a6b;
   font-size: 4rem;
   position: absolute;
-
 }
 
+@media screen and (max-width: 900px){
+  .section-title h1:first-child {
+    font-size: 12vw;
+    -webkit-text-stroke: 1px #495a6b;
+    color: transparent;
+    position: relative;
+    margin: 0;
+  }
+  .section-title h1 {
+    color: #495a6b;
+    font-size: 8vw;
+    position: absolute;
+  }
+}
 /* --------------------------- */
 
 .form {
