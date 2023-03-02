@@ -188,6 +188,29 @@ body {
     margin: 25px 0;
     font-size: 1.2em;
   }
+  header {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  margin-top: 0px;
+  padding: 100px;
+}
+.header_image{
+  width: 440px;
+  height:241px;
+}
+.form{
+  flex-direction:column;
+  align-items:cente;
+  justify-content:center;
+  margin:10px;
+}
+.form_content{
+  width:60vh;
+}
+.form_info{
+  width:auto;
+}
 }
 
 
