@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
 :root {
@@ -46,7 +47,8 @@ body {
   background-color: var(--bs-white3);
 }
 
-nav {
+/* //////////// Nav Bar */
+/* nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -70,8 +72,7 @@ nav {
   display: flex;
   align-items: center;
   list-style: none;
-}
-
+} 
 .nav-list li>a {
   color: var(--bs-white3);
   text-decoration: none;
@@ -84,7 +85,112 @@ nav {
   background-color: #293a52;
   color: var(--bs-whiteh);
   border: var(--bs-whiteh) 2px solid;
+}*/
+/* ///////////////////////// */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  top: 0;
+  background-color: #2f435eec;
+  backdrop-filter: blur(2px);
+  width: 100%;
+  box-sizing: border-box;
 }
+
+.navbar a {
+  color: var(--bs-white3);
+  text-decoration: none;
+  padding: 10px;
+  border: var(--bs-white3) 2px solid;
+  margin: 10px;
+}
+
+.navbar .logo {
+  color: var(--bs-white3);
+  font-weight: bolder;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.navbar .nav-links ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+/* .navbar .nav-links ul li {
+  margin: 0 15px;
+} */
+
+.navbar .nav-links ul li.active a {
+  color: #ed3c57;
+  font-weight: 600;
+}
+
+.navbar .menu-hamburger {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 30px;
+  width: 35px;
+}
+
+
+@media screen and (max-width: 900px) {
+  .navbar {
+    padding: 3rem;
+    background-color: #2f435eec;
+    backdrop-filter: blur(2px);
+  }
+
+  .navbar .logo {
+    position: absolute;
+    top: 40px;
+    left: 30px;
+
+  }
+
+  .navbar .menu-hamburger {
+    display: block;
+    align-items: center; 
+    color: white;
+  }
+
+  .nav-links {
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: #2f435e91;
+    backdrop-filter: blur(1rem);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100%;
+    transition: all 0.5s ease;
+  }
+
+  .nav-links.mobile-menu {
+    margin-left: 0;
+  }
+
+  .nav-links ul {
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar .nav-links ul li {
+    margin: 25px 0;
+    font-size: 1.2em;
+  }
+}
+
+
 
 header {
   display: flex;
@@ -158,6 +264,7 @@ header {
   position: absolute;
 
 }
+
 /* --------------------------- */
 
 .form {
@@ -182,7 +289,7 @@ form {
   box-shadow: -4px 0px 9px 0px var(--grayb);
 }
 
-.form_info {}
+
 
 .form_area {
   resize: none;
